@@ -1,4 +1,4 @@
-# APA1 Supa Task Backend
+# Supabase Backend Template
 
 This is where you'll design and deploy your API for access by your frontend
 
