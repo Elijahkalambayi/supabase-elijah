@@ -24,8 +24,8 @@ serve(async (req: Request) => {
 
     // Handle POST request - add message
     if (req.method === "POST") {
-      const { message } = await req.json();
-      const { error } = await supabase.from("bookings").insert([{ message }]);
+      const { available, name } = await req.json();
+      const { error } = await supabase.from("bookings").insert([{ available, name }]);
 
       if (error) throw error;
       return new Response(
